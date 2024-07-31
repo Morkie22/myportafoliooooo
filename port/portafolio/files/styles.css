@@ -1,0 +1,19 @@
+body {
+    padding-top: 56px;
+}
+
+/* Round profile image */
+#about img {
+    border-radius: 50%;
+}
+
+/* Smooth card hover effect */
+#projects .card {
+    transition: transform 0.3s ease-out;
+}
+
+/* Scale up card on hover */
+#projects .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

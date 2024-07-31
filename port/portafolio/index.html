@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>Hello! I'm Nataly, a passionate front-end web developer and occupational therapist. My journey began with a desire to blend creativity with technology, <br>leading me to master HTML, CSS, Bootstrap, and JavaScript. <br>My background in occupational therapy gives me a unique perspective on web development, emphasizing user needs, accessibility, and intuitive interfaces for all users, including those with disabilities. <br>I'm dedicated to making a positive impact whether I'm designing websites or enhancing clients' quality of life.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="./files/pictures/nataly.jpeg" class="img-fluid" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="container mt-5">
+    <h2>Projects</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="./files/pictures/ecom.png" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project 1: E-commerce Website</h5>
+                    <p class="card-text">Developed a fully functional e-commerce website with user authentication, product management, and payment integration using HTML, CSS, Bootstrap, and JavaScript.</p>
+                    <a href="https://replit.com/@morkie22/ecommerce" class="btn btn-primary" target="_blank">View on Replit</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="./files/pictures/BLOG.png" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project 3: Blog Platform</h5>
+                    <p class="card-text">Developed a blog platform where users can create, edit, and delete posts. Implemented features such as commenting and liking posts.</p>
+                    <a href="https://replit.com/@morkie22/blogg#index.html" class="btn btn-primary" target="_blank">View on Replit</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="./files/pictures/images.jpeg" alt="Project 4">
+                <div class="card-body">
+                    <h5 class="card-title">Project 4: Weather App</h5>
+                    <p class="card-text">Built a weather application using JavaScript and the OpenWeatherMap API to fetch and display weather data for any location.</p>
+                    <a href="https://replit.com/@morkie22/weather" class="btn btn-primary" target="_blank">View on Replit</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="./files/pictures/taskmanager.png" alt="Project 5">
+                <div class="card-body">
+                    <h5 class="card-title">Project 5: Task Manager</h5>
+                    <p class="card-text">Created a task management application that allows users to add, update, delete, and mark tasks as completed.</p>
+                    <a href="https://replit.com/@morkie22/task-manager#style.css" class="btn btn-primary" target="_blank">View on Replit</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="./files/pictures/chat.png" alt="Project 6">
+                <div class="card-body">
+                    <h5 class="card-title">Project 6: Chat Application</h5>
+                    <p class="card-text">Developed a real-time chat application using WebSocket and JavaScript. Users can join chat rooms and send messages in real time.</p>
+                    <a href="https://replit.com/@morkie22/chat" class="btn btn-primary" target="_blank">View on Replit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./files/scripts.js"></script>
+</body>
+</html>
+
+
